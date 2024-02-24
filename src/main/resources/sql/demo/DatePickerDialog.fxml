@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="141.0" prefWidth="273.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sql.demo.DatePickerController">
+   <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <children>
+          <Button layoutX="101.0" layoutY="85.0" onAction="#okButtonClicked" prefHeight="26.0" prefWidth="72.0" text="OK" />
+          <DatePicker fx:id="datePicker" layoutX="49.0" layoutY="26.0" />
+      </children>
+   </AnchorPane>
+</VBox>

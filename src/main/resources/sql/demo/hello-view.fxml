@@ -1,112 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="731.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sql.demo.HelloController">
-  <tabs>
-      <Tab text="connect">
-         <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                <children>
-                    <TextField fx:id="userNameText" layoutX="211.8" layoutY="124.8" prefHeight="30.0" prefWidth="334.0" promptText="Enter user name..." AnchorPane.bottomAnchor="392.8" AnchorPane.leftAnchor="211.8" AnchorPane.rightAnchor="185.79999999999995" AnchorPane.topAnchor="124.8" />
-                    <PasswordField fx:id="passwordTest" layoutX="214.4" layoutY="185.0" prefHeight="30.0" prefWidth="334.0" promptText="Enter your password..." AnchorPane.bottomAnchor="334.0" AnchorPane.leftAnchor="214.0" AnchorPane.rightAnchor="183.0" AnchorPane.topAnchor="185.0" />
-                    <Button fx:id="connectionButton" contentDisplay="CENTER" layoutX="207.0" layoutY="425.0" mnemonicParsing="false" onAction="#connectToDataBase" prefHeight="48.0" prefWidth="294.0" text="Connect" textAlignment="CENTER" AnchorPane.bottomAnchor="77.39999999999998" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="230.60000000000002" AnchorPane.topAnchor="425.0">
-                        <font>
-                            <Font name="System Bold" size="19.0" />
-                        </font></Button>
-                    <Label alignment="CENTER" layoutX="108.0" layoutY="128.0" prefHeight="26.0" prefWidth="90.0" text="Username  :" AnchorPane.bottomAnchor="396.0" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="533.6" AnchorPane.topAnchor="128.0">
-                        <font>
-                            <Font size="16.0" />
-                        </font>
-                    </Label>
-                    <Label layoutX="113.8" layoutY="187.2" prefHeight="27.0" prefWidth="80.0" text="Password :" AnchorPane.bottomAnchor="336.0" AnchorPane.leftAnchor="113.8" AnchorPane.rightAnchor="538.2" AnchorPane.topAnchor="187.2">
-                        <font>
-                            <Font size="16.0" />
-                        </font>
-                    </Label>
-                    <Label fx:id="stopLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="397.0" prefHeight="19.0" prefWidth="731.0">
-                        <font>
-                            <Font name="System Bold" size="13.0" />
-                        </font>
-                     <textFill>
-                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
-                           <stops>
-                              <Stop>
-                                 <color>
-                                    <Color />
-                                 </color>
-                              </Stop>
-                              <Stop offset="1.0">
-                                 <color>
-                                    <Color red="1.0" green="1.0" blue="1.0" />
-                                 </color>
-                              </Stop>
-                           </stops>
-                        </RadialGradient>
-                     </textFill>
-                    </Label>
-                    <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="111.0" layoutY="253.0" prefHeight="26.0" prefWidth="78.0" text="Schema :" textAlignment="CENTER">
-                        <font>
-                            <Font size="16.0" />
-                        </font>
-                    </Label>
-                    <TextField fx:id="schemaNameText" layoutX="216.0" layoutY="251.0" prefHeight="30.0" prefWidth="330.0" promptText="Enter schema name..." />
-                    <Label alignment="CENTER" layoutX="210.0" layoutY="43.0" text="Connect to your Data Base" textAlignment="CENTER">
-                        <font>
-                            <Font name="System Bold" size="22.0" />
-                        </font>
-                    </Label>
-                    <TextField fx:id="tableNameText" layoutX="217.0" layoutY="311.0" prefHeight="30.0" prefWidth="329.0" promptText="Enter table name..." />
-                    <Label alignment="CENTER" layoutX="137.0" layoutY="313.0" prefHeight="26.0" prefWidth="55.0" text="Table  :">
-                        <font>
-                            <Font size="16.0" />
-                        </font>
-                    </Label>
-                </children>
-            </AnchorPane>
-         </content>
-      </Tab>
-    <Tab text="one proccess">
-      <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-               <children>
-                  <ComboBox fx:id="one" layoutX="53.0" layoutY="32.0" prefHeight="26.0" prefWidth="404.0" />
-                  <Button fx:id="ex1" layoutX="70.0" layoutY="99.0" mnemonicParsing="false" onAction="#dropSelect" text="execute" />
-                  <Label layoutX="53.0" layoutY="14.0" text="Choose here" />
-                  <TableView fx:id="tableone" layoutX="34.0" layoutY="157.0" prefHeight="346.0" prefWidth="662.0">
-                    <columns>
-                      <TableColumn prefWidth="75.0" text="C1" />
-                      <TableColumn prefWidth="75.0" text="C2" />
-                    </columns>
-                  </TableView>
-               </children></AnchorPane>
-      </content>
-    </Tab>
-    <Tab text="two proccess">
-      <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="437.0" prefWidth="713.0">
-               <children>
-                  <TableView fx:id="tableoneone" layoutX="34.0" layoutY="136.0" prefHeight="200.0" prefWidth="662.0">
-                     <columns>
-                        <TableColumn prefWidth="75.0" text="C1" />
-                        <TableColumn prefWidth="75.0" text="C2" />
-                     </columns>
-                  </TableView>
-                  <Button layoutX="504.0" layoutY="96.0" mnemonicParsing="false" onAction="#dropSelect1" text="execute" />
-                  <ComboBox fx:id="oneone" layoutX="64.0" layoutY="59.0" prefHeight="26.0" prefWidth="404.0" />
-                  <ComboBox fx:id="onetwo" layoutX="64.0" layoutY="96.0" prefHeight="26.0" prefWidth="404.0" />
-                  <Label layoutX="64.0" layoutY="30.0" text="Choose here" />
-                  <TableView fx:id="tableonetwo" layoutX="34.0" layoutY="336.0" prefHeight="200.0" prefWidth="662.0">
-                     <columns>
-                        <TableColumn prefWidth="75.0" text="C1" />
-                        <TableColumn prefWidth="75.0" text="C2" />
-                     </columns>
-                  </TableView>
-               </children></AnchorPane>
-      </content>
-    </Tab>
-  </tabs>
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="731.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sql.demo.HelloController">
+    <tabs>
+        <Tab text="Connect">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <Label layoutX="235.0" layoutY="19.0" text="Connect to Database" textAlignment="CENTER">
+                            <font>
+                                <Font name="Arial Bold" size="26.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="139.0" layoutY="126.0" prefHeight="26.0" prefWidth="90.0" text="Username:" />
+                        <Label layoutX="139.0" layoutY="186.0" prefHeight="27.0" prefWidth="80.0" text="Password:" />
+                        <Label layoutX="139.0" layoutY="253.0" prefHeight="26.0" prefWidth="78.0" text="Schema:" />
+                        <Label layoutX="139.0" layoutY="313.0" prefHeight="26.0" prefWidth="55.0" text="Table:" />
+                        <TextField fx:id="userNameText" layoutX="248.0" layoutY="124.0" prefHeight="30.0" prefWidth="334.0" promptText="Enter username..." />
+                        <PasswordField fx:id="passwordTest" layoutX="248.0" layoutY="185.0" prefHeight="30.0" prefWidth="334.0" promptText="Enter your password..." />
+                        <TextField fx:id="schemaNameText" layoutX="248.0" layoutY="251.0" prefHeight="30.0" prefWidth="334.0" promptText="Enter schema name..." />
+                        <TextField fx:id="tableNameText" layoutX="248.0" layoutY="311.0" prefHeight="30.0" prefWidth="334.0" promptText="Enter table name..." />
+                        <Button fx:id="connectionButton" layoutX="218.0" layoutY="427.0" mnemonicParsing="false" onAction="#connectToDataBase" prefHeight="48.0" prefWidth="294.0" text="Connect" textAlignment="CENTER" textOverrun="CLIP">
+                            <font>
+                                <Font name="System Bold" size="31.0" />
+                            </font>
+                        </Button>
+                        <Label fx:id="stopLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="391.0" prefHeight="19.0" prefWidth="731.0" text="Status Message" textFill="WHITE" />
+                  <Button layoutX="582.0" layoutY="448.0" mnemonicParsing="false" onAction="#how" text="How to use ?" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab fx:id="tab1" text="One Process">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <Label layoutX="36.0" layoutY="14.0" text="Choose here" />
+                        <ComboBox fx:id="one" layoutX="36.0" layoutY="32.0" prefHeight="26.0" prefWidth="404.0" promptText="-select-" />
+                        <Button fx:id="ex1" layoutX="639.0" layoutY="32.0" mnemonicParsing="false" onAction="#dropSelect" text="Execute" />
+                        <TableView fx:id="tableone" layoutX="34.0" layoutY="92.0" prefHeight="411.0" prefWidth="662.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab fx:id="tab2" text="Two Process">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="437.0" prefWidth="713.0">
+                    <children>
+                        <Label layoutX="34.0" layoutY="14.0" text="Choose here" />
+                        <ComboBox fx:id="oneone" layoutX="34.0" layoutY="32.0" prefHeight="26.0" prefWidth="404.0" promptText="-select-" />
+                        <ComboBox fx:id="onetwo" layoutX="34.0" layoutY="69.0" prefHeight="26.0" prefWidth="404.0" promptText="-select-" />
+                        <Button layoutX="639.0" layoutY="32.0" mnemonicParsing="false" onAction="#dropSelect1" text="Execute" />
+                        <TableView fx:id="tableoneone" layoutX="34.0" layoutY="124.0" prefHeight="200.0" prefWidth="662.0" />
+                        <TableView fx:id="tableonetwo" layoutX="34.0" layoutY="336.0" prefHeight="200.0" prefWidth="662.0" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
 </TabPane>
