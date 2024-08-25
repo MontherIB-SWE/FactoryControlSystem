@@ -4,34 +4,68 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
 
-<StackPane fx:id="tutorialPane" alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="sql.demo.TutorialController">
+<StackPane fx:id="tutorialPane" alignment="CENTER" prefHeight="409.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sql.demo.TutorialController">
     <!-- Tutorial 1 Window -->
-    <AnchorPane fx:id="tutorial1" prefHeight="300" prefWidth="400" style="-fx-background-color: lightblue;" visible="true">
+    <AnchorPane fx:id="tutorial1" prefHeight="700.0" prefWidth="1200.0">
         <children>
-            <Button layoutX="170" layoutY="250" onAction="#onNextButtonClicked" text="Next" />
-            <Button layoutX="100" layoutY="250" onAction="#onPreviousButtonClicked" text="Previous" />
-            <Label layoutX="165" layoutY="120" text="Tutorial Window 1" />
-            <!-- Add your tutorial content here -->
+            <Button layoutX="355.0" layoutY="348.0" onAction="#onNextButtonClicked" prefHeight="26.0" prefWidth="61.0" text="Next" />
+            <Button fx:id="Previous" layoutX="47.0" layoutY="348.0" onAction="#onPreviousButtonClicked" prefHeight="26.0" prefWidth="62.0" text="Previous" visible="false" />
+            <Label layoutX="46.0" layoutY="93.0" prefHeight="166.0" prefWidth="370.0" text="In this tab, you enter your database details and then click connect. Next to the connect button, it will show you whether you connected successfully or failed to connect." wrapText="true">
+                <font>
+                    <Font name="Arial" size="22.0" />
+                </font>
+            </Label>
+            <Label layoutX="139.0" layoutY="67.0" prefHeight="26.0" prefWidth="185.0" text="First (connect tab)" textAlignment="CENTER">
+                <font>
+                    <Font name="Arial" size="22.0" />
+                </font>
+            </Label>
+         <Label layoutX="46.0" layoutY="194.0" prefHeight="166.0" prefWidth="370.0" text="Any time you want to change information you can come back to this tab and apply the changes" wrapText="true">
+            <font>
+               <Font name="Arial" size="15.0" />
+            </font>
+         </Label>
         </children>
     </AnchorPane>
-
     <!-- Tutorial 2 Window -->
-    <AnchorPane fx:id="tutorial2" prefHeight="300" prefWidth="400" style="-fx-background-color: lightgreen;" visible="false">
+    <AnchorPane fx:id="tutorial2" prefHeight="700.0" prefWidth="1200.0" visible="false">
         <children>
-            <Button layoutX="170" layoutY="250" onAction="#onNextButtonClicked" text="Next" />
-            <Button layoutX="100" layoutY="250" onAction="#onPreviousButtonClicked" text="Previous" />
-            <Label layoutX="165" layoutY="120" text="Tutorial Window 2" />
-            <!-- Add your tutorial content here -->
+            <Button layoutX="355.0" layoutY="348.0" onAction="#onNextButtonClicked" prefHeight="26.0" prefWidth="61.0" text="Next" />
+            <Button fx:id="previous2" layoutX="47.0" layoutY="348.0" onAction="#onPreviousButtonClicked" prefHeight="26.0" prefWidth="62.0" text="Previous" />
+            <Label layoutX="47.0" layoutY="107.0" prefHeight="166.0" prefWidth="370.0" text="In this tab, you can select a query and click Execute to show the results in the table." textAlignment="CENTER" wrapText="true">
+                <font>
+                    <Font name="Arial" size="22.0" />
+                </font>
+            </Label>
+            <Label layoutX="117.0" layoutY="67.0" prefHeight="26.0" prefWidth="228.0" text="Second (One Process)" textAlignment="CENTER">
+                <font>
+                    <Font name="Arial" size="22.0" />
+                </font>
+            </Label>
         </children>
     </AnchorPane>
-
     <!-- Tutorial 3 Window -->
-    <AnchorPane fx:id="tutorial3" prefHeight="300" prefWidth="400" style="-fx-background-color: lightcoral;" visible="false">
+    <AnchorPane fx:id="tutorial3" prefHeight="700.0" prefWidth="1200.0" visible="false">
         <children>
-            <Button layoutX="100" layoutY="250" onAction="#onPreviousButtonClicked" text="Previous" />
-            <Label layoutX="165" layoutY="120" text="Tutorial Window 3" />
-            <!-- Add your tutorial content here -->
+            <Button fx:id="Close" layoutX="355.0" layoutY="348.0" onAction="#Close" prefHeight="26.0" prefWidth="61.0" text="Close" />
+            <Button fx:id="previous3" layoutX="47.0" layoutY="348.0" onAction="#onPreviousButtonClicked" prefHeight="26.0" prefWidth="62.0" text="Previous" />
+            <Label layoutX="47.0" layoutY="107.0" prefHeight="104.0" prefWidth="370.0" text="In this tab, you can select more than one query and the results will show up on the screen " textAlignment="CENTER" wrapText="true">
+                <font>
+                    <Font name="Arial" size="22.0" />
+                </font>
+            </Label>
+            <Label layoutX="137.0" layoutY="80.0" prefHeight="26.0" prefWidth="190.0" text="Third (MultiThread)" textAlignment="CENTER" textOverrun="CLIP">
+                <font>
+                    <Font name="Arial" size="22.0" />
+                </font>
+            </Label>
+         <Label layoutX="47.0" layoutY="205.0" prefHeight="104.0" prefWidth="370.0" text="Important : you have to enter a number between 1-6 for number of queries" wrapText="true">
+            <font>
+               <Font name="Arial" size="22.0" />
+            </font>
+         </Label>
         </children>
     </AnchorPane>
 </StackPane>

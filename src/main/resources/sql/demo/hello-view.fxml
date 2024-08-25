@@ -17,26 +17,26 @@
             <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                     <children>
-                        <Label layoutX="235.0" layoutY="19.0" text="Connect to Database" textAlignment="CENTER">
+                        <Label layoutX="236.0" layoutY="49.0" text="Connect to Database" textAlignment="CENTER">
                             <font>
                                 <Font name="Arial Bold" size="26.0" />
                             </font>
                         </Label>
-                        <Label layoutX="139.0" layoutY="126.0" prefHeight="26.0" prefWidth="90.0" text="Username:" />
-                        <Label layoutX="139.0" layoutY="186.0" prefHeight="27.0" prefWidth="80.0" text="Password:" />
-                        <Label layoutX="139.0" layoutY="253.0" prefHeight="26.0" prefWidth="78.0" text="Schema:" />
-                        <Label layoutX="139.0" layoutY="313.0" prefHeight="26.0" prefWidth="55.0" text="Table:" />
-                        <TextField fx:id="userNameText" layoutX="248.0" layoutY="124.0" prefHeight="30.0" prefWidth="334.0" promptText="Enter username..." />
-                        <PasswordField fx:id="passwordTest" layoutX="248.0" layoutY="185.0" prefHeight="30.0" prefWidth="334.0" promptText="Enter your password..." />
-                        <TextField fx:id="schemaNameText" layoutX="248.0" layoutY="251.0" prefHeight="30.0" prefWidth="334.0" promptText="Enter schema name..." />
-                        <TextField fx:id="tableNameText" layoutX="248.0" layoutY="311.0" prefHeight="30.0" prefWidth="334.0" promptText="Enter table name..." />
-                        <Button fx:id="connectionButton" layoutX="218.0" layoutY="427.0" mnemonicParsing="false" onAction="#connectToDataBase" prefHeight="48.0" prefWidth="294.0" text="Connect" textAlignment="CENTER" textOverrun="CLIP">
+                        <Label layoutX="68.0" layoutY="165.0" prefHeight="26.0" prefWidth="90.0" text="Username:" />
+                        <Label layoutX="68.0" layoutY="225.0" prefHeight="27.0" prefWidth="80.0" text="Password:" />
+                        <Label layoutX="68.0" layoutY="292.0" prefHeight="26.0" prefWidth="78.0" text="Schema:" />
+                        <Label layoutX="68.0" layoutY="352.0" prefHeight="26.0" prefWidth="55.0" text="Table:" />
+                        <TextField fx:id="userNameText" layoutX="195.0" layoutY="165.0" prefHeight="30.0" prefWidth="334.0" promptText="Enter username..." />
+                        <PasswordField fx:id="passwordTest" layoutX="195.0" layoutY="226.0" prefHeight="30.0" prefWidth="334.0" promptText="Enter your password..." />
+                        <TextField fx:id="schemaNameText" layoutX="195.0" layoutY="292.0" prefHeight="30.0" prefWidth="334.0" promptText="Enter schema name..." />
+                        <TextField fx:id="tableNameText" layoutX="195.0" layoutY="352.0" prefHeight="30.0" prefWidth="334.0" promptText="Enter table name..." />
+                        <Button fx:id="connectionButton" layoutX="217.0" layoutY="429.0" mnemonicParsing="false" onAction="#connectToDataBase" prefHeight="48.0" prefWidth="294.0" text="Connect" textAlignment="CENTER" textOverrun="CLIP">
                             <font>
                                 <Font name="System Bold" size="31.0" />
                             </font>
                         </Button>
-                        <Label fx:id="stopLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="391.0" prefHeight="19.0" prefWidth="731.0" text="Status Message" textFill="WHITE" />
-                  <Button layoutX="582.0" layoutY="448.0" mnemonicParsing="false" onAction="#how" text="How to use ?" />
+                        <Label fx:id="stopLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="35.0" layoutY="453.0" prefHeight="19.0" prefWidth="162.0" />
+                  <Button layoutX="64.0" layoutY="51.0" mnemonicParsing="false" onAction="#tutorial" prefHeight="26.0" prefWidth="86.0" text="How to use ?" />
                     </children>
                 </AnchorPane>
             </content>
@@ -46,24 +46,28 @@
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                     <children>
                         <Label layoutX="36.0" layoutY="14.0" text="Choose here" />
-                        <ComboBox fx:id="one" layoutX="36.0" layoutY="32.0" prefHeight="26.0" prefWidth="404.0" promptText="-select-" />
-                        <Button fx:id="ex1" layoutX="639.0" layoutY="32.0" mnemonicParsing="false" onAction="#dropSelect" text="Execute" />
+                        <ComboBox fx:id="one" layoutX="36.0" layoutY="44.0" prefHeight="26.0" prefWidth="404.0" promptText="-select-" />
+                        <Button fx:id="ex1" layoutX="639.0" layoutY="44.0" mnemonicParsing="false" onAction="#dropSelect" text="Execute" />
                         <TableView fx:id="tableone" layoutX="34.0" layoutY="92.0" prefHeight="411.0" prefWidth="662.0" />
                     </children>
                 </AnchorPane>
             </content>
         </Tab>
-        <Tab fx:id="tab2" text="Two Process">
+        <Tab fx:id="tab2" text="MultiThread">
             <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="437.0" prefWidth="713.0">
-                    <children>
-                        <Label layoutX="34.0" layoutY="14.0" text="Choose here" />
-                        <ComboBox fx:id="oneone" layoutX="34.0" layoutY="32.0" prefHeight="26.0" prefWidth="404.0" promptText="-select-" />
-                        <ComboBox fx:id="onetwo" layoutX="34.0" layoutY="69.0" prefHeight="26.0" prefWidth="404.0" promptText="-select-" />
-                        <Button layoutX="639.0" layoutY="32.0" mnemonicParsing="false" onAction="#dropSelect1" text="Execute" />
-                        <TableView fx:id="tableoneone" layoutX="34.0" layoutY="124.0" prefHeight="200.0" prefWidth="662.0" />
-                        <TableView fx:id="tableonetwo" layoutX="34.0" layoutY="336.0" prefHeight="200.0" prefWidth="662.0" />
-                    </children>
+               <children>
+                  <Label layoutX="50.0" layoutY="41.0" prefHeight="18.0" prefWidth="160.0" text="how many queries (1-6):" />
+                  <TextField fx:id="size" layoutX="50.0" layoutY="72.0" promptText="Enter a number" />
+                  <ComboBox fx:id="thread0" layoutX="50.0" layoutY="120.0" prefHeight="30.0" prefWidth="600.0" promptText="-Select-" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+                  <ComboBox fx:id="thread1" layoutX="50.0" layoutY="170.0" prefHeight="30.0" prefWidth="600.0" promptText="-Select-" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+                  <ComboBox fx:id="thread2" layoutX="50.0" layoutY="220.0" prefHeight="30.0" prefWidth="600.0" promptText="-Select-" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+                  <ComboBox fx:id="thread3" layoutX="50.0" layoutY="270.0" prefHeight="30.0" prefWidth="600.0" promptText="-Select-" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+                  <ComboBox fx:id="thread4" layoutX="50.0" layoutY="320.0" prefHeight="30.0" prefWidth="600.0" promptText="-Select-" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+                  <ComboBox fx:id="thread5" layoutX="50.0" layoutY="370.0" prefHeight="30.0" prefWidth="600.0" promptText="-Select-" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+                  <Button fx:id="Confirm" layoutX="586.4" layoutY="72.0" mnemonicParsing="false" onAction="#checkNumOfQueries" prefHeight="26.0" prefWidth="95.0" text="Confirm" AnchorPane.leftAnchor="586.0" AnchorPane.rightAnchor="50.0" />
+                  <Button fx:id="Execute" layoutX="325.0" layoutY="431.0" mnemonicParsing="false" onAction="#Thread" prefHeight="26.0" prefWidth="81.0" text="Execute" />
+               </children>
                 </AnchorPane>
             </content>
         </Tab>

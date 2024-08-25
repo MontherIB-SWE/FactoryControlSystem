@@ -3,9 +3,18 @@ package sql.demo;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
+import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
 public class TutorialController {
+    @FXML
+    private Button Previous;
+    @FXML
+    private Button Close;
+    @FXML
+    private Button Next;
+
     @FXML
     private StackPane tutorialPane;
 
@@ -33,6 +42,7 @@ public class TutorialController {
         // Show the requested tutorial window
         switch (tutorialNumber) {
             case 1:
+                Previous.setDisable(true);
                 tutorial1.setVisible(true);
                 break;
             case 2:
@@ -60,5 +70,11 @@ public class TutorialController {
             currentTutorial--;
             showTutorial(currentTutorial);
         }
+    }
+
+    @FXML
+    private void Close() {
+        Stage stage = (Stage) Close.getScene().getWindow();
+        stage.close();
     }
 }
