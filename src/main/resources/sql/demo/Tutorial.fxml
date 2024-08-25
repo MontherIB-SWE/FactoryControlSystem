@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="tutorialPane" alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="sql.demo.TutorialController">
+    <!-- Tutorial 1 Window -->
+    <AnchorPane fx:id="tutorial1" prefHeight="300" prefWidth="400" style="-fx-background-color: lightblue;" visible="true">
+        <children>
+            <Button layoutX="170" layoutY="250" onAction="#onNextButtonClicked" text="Next" />
+            <Button layoutX="100" layoutY="250" onAction="#onPreviousButtonClicked" text="Previous" />
+            <Label layoutX="165" layoutY="120" text="Tutorial Window 1" />
+            <!-- Add your tutorial content here -->
+        </children>
+    </AnchorPane>
+
+    <!-- Tutorial 2 Window -->
+    <AnchorPane fx:id="tutorial2" prefHeight="300" prefWidth="400" style="-fx-background-color: lightgreen;" visible="false">
+        <children>
+            <Button layoutX="170" layoutY="250" onAction="#onNextButtonClicked" text="Next" />
+            <Button layoutX="100" layoutY="250" onAction="#onPreviousButtonClicked" text="Previous" />
+            <Label layoutX="165" layoutY="120" text="Tutorial Window 2" />
+            <!-- Add your tutorial content here -->
+        </children>
+    </AnchorPane>
+
+    <!-- Tutorial 3 Window -->
+    <AnchorPane fx:id="tutorial3" prefHeight="300" prefWidth="400" style="-fx-background-color: lightcoral;" visible="false">
+        <children>
+            <Button layoutX="100" layoutY="250" onAction="#onPreviousButtonClicked" text="Previous" />
+            <Label layoutX="165" layoutY="120" text="Tutorial Window 3" />
+            <!-- Add your tutorial content here -->
+        </children>
+    </AnchorPane>
+</StackPane>
