@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12fcc755-b9d4-4009-aa75-babb88e74880" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sql/demo/CustomDatePicker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sql/demo/TutorialController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/demo/Tutorial.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sql/demo/CustomDatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sql/demo/CustomDatePicker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sql/demo/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sql/demo/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sql/demo/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sql/demo/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sql/demo/HowToCon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sql/demo/TutorialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sql/demo/TutorialController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/demo/Tutorial.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/demo/Tutorial.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/sql/demo/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/demo/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/demo/howToUse.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/demo/howToUse2.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/demo/howToUse3.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +34,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.HelloApplication.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -65,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724615025699</updated>
-      <workItem from="1724615026866" duration="21000" />
+      <workItem from="1724615026866" duration="290000" />
     </task>
     <servers />
   </component>
